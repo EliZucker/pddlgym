@@ -37,6 +37,18 @@ First, set up a virtual environment with Python 3. For instance, if you use [vir
 ### (Optional) Planner Dependencies
 To be able to run the planning demos in `demo.py`, install [Fast-Forward](https://fai.cs.uni-saarland.de/hoffmann/ff.html). Set environment variable `FF_PATH` to the `ff` executable, wherever you install it.
 
+## MacOS Installation Tips (added by @EliZucker)
+
+- Ensure these are installed via brew:
+    - `coreutils`
+    -  `gcc` (required for FF)
+- FastFoward Installation:
+    - Must used patched version (on website, or [here](https://fai.cs.uni-saarland.de/hoffmann/ff/FF-v2.3.tgz))
+    - Before compiling FF from the above link, change `gcc` to `gcc-9` (this tip is based on [this comment](https://groups.google.com/d/msg/fast-downward/bYWbXOKMinQ/3CtgTiyhCgAJ))
+- Python versions:
+    - For Python 3.7+, either wait for [this PR](https://github.com/tomsilver/pddlgym/pull/9) to be merged, or clone directly from this repo
+    - Otherwise use Python 3.6 or below in your virtual environment
+
 ## Usage examples
 
 ### Hello, PDDLGym

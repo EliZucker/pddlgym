@@ -42,9 +42,10 @@ for env_name, kwargs in [
         ("easyblocks", {'render' : blocks_render}),
         ("conditionalblocks", {'render' : blocks_render}),
         ("conditionalferry", {}),
-        ("blocks_operator_actions", {'render' : blocks_render, 
+        ("blocks_operator_actions", {'render' : blocks_render,
                                      'operators_as_actions' : True,
                                      'dynamic_action_space' : True}),
+        ("eli-rubiks-attempt", {'render' : rubiks_render}),
 ]:
     other_args = {
         "raise_error_on_invalid_action": False,

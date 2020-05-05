@@ -46,8 +46,8 @@ for env_name, kwargs in [
                                      'operators_as_actions' : True,
                                      'dynamic_action_space' : True}),
         ("rubiks", {'render' : rubiks_render,
-                                'operators_as_actions' : False,
-                                'dynamic_action_space' : False}),
+                                'operators_as_actions' : True,
+                                'dynamic_action_space' : True}),
 ]:
     other_args = {
         "raise_error_on_invalid_action": False,

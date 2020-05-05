@@ -74,26 +74,8 @@
      green6 - piece
      green7 - piece
      green8 - piece
-     green9 - piece
-     up - movetype
-     down - movetype
-     right - movetype
-     left - movetype
-     front - movetype
-     back - movetype)
+     green9 - piece)
    (:init
-     (is-up up)
-     (is-down down)
-     (is-right right)
-     (is-left left)
-     (is-front front)
-     (is-back back)
-     (twist up)
-     (twist down)
-     (twist right)
-     (twist left)
-     (twist front)
-     (twist back)
      (pos45 blue9)
      (pos34 yellow9)
      (pos33 yellow2)

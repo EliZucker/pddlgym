@@ -75,31 +75,20 @@
                 (pos52 ?tile - piece)
                 (pos53 ?tile - piece)
                 (pos54 ?tile - piece)
-                (twist ?movement - movetype)
-                (is-up ?movement - movetype)
-                (is-down ?movement - movetype)
-                (is-right ?movement - movetype)
-                (is-left ?movement - movetype)
-                (is-front ?movement - movetype)
-                (is-back ?movement - movetype)
                 )
-
-    ; (:actions twist)
 
    (:action up
              :parameters (?tile3 - piece ?tile6 - piece ?tile9 - piece
                     ?tile10 - piece ?tile11 - piece ?tile12 - piece ?tile13 - piece ?tile15 - piece ?tile16 - piece ?tile17 - piece ?tile18 - piece
                     ?tile46 - piece ?tile47 - piece ?tile48 - piece
                     ?tile19 - piece ?tile22 - piece ?tile25 - piece
-                    ?tile43 - piece ?tile44 - piece ?tile45 - piece
-                    ?movement - movetype)
+                    ?tile43 - piece ?tile44 - piece ?tile45 - piece)
              :precondition (and (pos3 ?tile3) (pos6 ?tile6) (pos9 ?tile9)
                     (pos10 ?tile10) (pos11 ?tile11) (pos12 ?tile12) (pos13 ?tile13)
                     (pos15 ?tile15) (pos16 ?tile16) (pos17 ?tile17) (pos18 ?tile18)
                     (pos46 ?tile46) (pos47 ?tile47) (pos48 ?tile48)
                     (pos19 ?tile19) (pos22 ?tile22) (pos25 ?tile25)
-                    (pos43 ?tile43) (pos44 ?tile44) (pos45 ?tile45)
-                    (twist ?movement) (is-up ?movement))
+                    (pos43 ?tile43) (pos44 ?tile44) (pos45 ?tile45))
              :effect (and (pos3 ?tile46) (pos6 ?tile47) (pos9 ?tile48)
                     (pos10 ?tile16) (pos11 ?tile13) (pos12 ?tile10) (pos13 ?tile17)
                     (pos15 ?tile11) (pos16 ?tile18) (pos17 ?tile15) (pos18 ?tile12)
@@ -119,15 +108,13 @@
                     ?tile28 - piece ?tile29 - piece ?tile30 - piece ?tile31 - piece ?tile33 - piece ?tile34 - piece ?tile35 - piece ?tile36 - piece
                     ?tile52 - piece ?tile53 - piece ?tile54 - piece
                     ?tile27 - piece ?tile24 - piece ?tile21 - piece
-                    ?tile39 - piece ?tile38 - piece ?tile37 - piece
-                    ?movement - movetype)
+                    ?tile39 - piece ?tile38 - piece ?tile37 - piece)
              :precondition (and (pos1 ?tile1) (pos4 ?tile4) (pos7 ?tile7)
                     (pos28 ?tile28) (pos29 ?tile29) (pos30 ?tile30) (pos31 ?tile31)
                     (pos33 ?tile33) (pos34 ?tile34) (pos35 ?tile35) (pos36 ?tile36)
                     (pos52 ?tile52) (pos53 ?tile53) (pos54 ?tile54)
                     (pos27 ?tile27) (pos24 ?tile24) (pos21 ?tile21)
-                    (pos39 ?tile39) (pos38 ?tile38) (pos37 ?tile37)
-                    (twist ?movement) (is-down ?movement))
+                    (pos39 ?tile39) (pos38 ?tile38) (pos37 ?tile37))
              :effect (and (pos1 ?tile39) (pos4 ?tile38) (pos7 ?tile37)
                     (pos28 ?tile34) (pos29 ?tile31) (pos30 ?tile28) (pos31 ?tile35)
                     (pos33 ?tile29) (pos34 ?tile36) (pos35 ?tile33) (pos36 ?tile30)
@@ -147,15 +134,13 @@
                     ?tile19 - piece ?tile20 - piece ?tile21 - piece ?tile22 - piece ?tile24 - piece ?tile25 - piece ?tile26 - piece ?tile27 - piece
                     ?tile12 - piece ?tile15 - piece ?tile18 - piece
                     ?tile48 - piece ?tile51 - piece ?tile54 - piece
-                    ?tile28 - piece ?tile31 - piece ?tile34 - piece
-                    ?movement - movetype)
+                    ?tile28 - piece ?tile31 - piece ?tile34 - piece)
              :precondition (and (pos39 ?tile39) (pos42 ?tile42) (pos45 ?tile45)
                     (pos19 ?tile19) (pos20 ?tile20) (pos21 ?tile21) (pos22 ?tile22)
                     (pos24 ?tile24) (pos25 ?tile25) (pos26 ?tile26) (pos27 ?tile27)
                     (pos12 ?tile12) (pos15 ?tile15) (pos18 ?tile18)
                     (pos48 ?tile48) (pos51 ?tile51) (pos54 ?tile54)
-                    (pos28 ?tile28) (pos31 ?tile31) (pos34 ?tile34)
-                    (twist ?movement) (is-right ?movement))
+                    (pos28 ?tile28) (pos31 ?tile31) (pos34 ?tile34))
              :effect (and (pos39 ?tile12) (pos42 ?tile15) (pos45 ?tile18)
                     (pos19 ?tile25) (pos20 ?tile22) (pos21 ?tile19) (pos22 ?tile26)
                     (pos24 ?tile20) (pos25 ?tile27) (pos26 ?tile24) (pos27 ?tile21)
@@ -175,15 +160,13 @@
                     ?tile1 - piece ?tile2 - piece ?tile3 - piece ?tile4 - piece ?tile6 - piece ?tile7 - piece ?tile8 - piece ?tile9 - piece
                     ?tile10 - piece ?tile13 - piece ?tile16 - piece
                     ?tile46 - piece ?tile49 - piece ?tile52 - piece
-                    ?tile30 - piece ?tile33 - piece ?tile36 - piece
-                    ?movement - movetype)
+                    ?tile30 - piece ?tile33 - piece ?tile36 - piece)
              :precondition (and (pos37 ?tile37) (pos40 ?tile40) (pos43 ?tile43)
                     (pos1 ?tile1) (pos2 ?tile2) (pos3 ?tile3) (pos4 ?tile4)
                     (pos6 ?tile6) (pos7 ?tile7) (pos8 ?tile8) (pos9 ?tile9)
                     (pos10 ?tile10) (pos13 ?tile13) (pos16 ?tile16)
                     (pos46 ?tile46) (pos49 ?tile49) (pos52 ?tile52)
-                    (pos30 ?tile30) (pos33 ?tile33) (pos36 ?tile36)
-                    (twist ?movement) (is-left ?movement))
+                    (pos30 ?tile30) (pos33 ?tile33) (pos36 ?tile36))
              :effect (and (pos37 ?tile36) (pos40 ?tile33) (pos43 ?tile30)
                     (pos1 ?tile7) (pos2 ?tile4) (pos3 ?tile1) (pos4 ?tile8)
                     (pos6 ?tile2) (pos7 ?tile9) (pos8 ?tile6) (pos9 ?tile3)
@@ -203,15 +186,13 @@
                     ?tile46 - piece ?tile47 - piece ?tile48 - piece ?tile49 - piece ?tile51 - piece ?tile52 - piece ?tile53 - piece ?tile54 - piece
                     ?tile34 - piece ?tile35 - piece ?tile36 - piece
                     ?tile7 - piece ?tile8 - piece ?tile9 - piece
-                    ?tile25 - piece ?tile26 - piece ?tile27 - piece
-                    ?movement - movetype)
+                    ?tile25 - piece ?tile26 - piece ?tile27 - piece)
              :precondition (and (pos16 ?tile16) (pos17 ?tile17) (pos18 ?tile18)
                     (pos46 ?tile46) (pos47 ?tile47) (pos48 ?tile48) (pos49 ?tile49)
                     (pos51 ?tile51) (pos52 ?tile52) (pos53 ?tile53) (pos54 ?tile54)
                     (pos34 ?tile34) (pos35 ?tile35) (pos36 ?tile36)
                     (pos7 ?tile7) (pos8 ?tile8) (pos9 ?tile9)
-                    (pos25 ?tile25) (pos26 ?tile26) (pos27 ?tile27)
-                    (twist ?movement) (is-front ?movement))
+                    (pos25 ?tile25) (pos26 ?tile26) (pos27 ?tile27))
              :effect (and (pos16 ?tile7) (pos17 ?tile8) (pos18 ?tile9)
                     (pos46 ?tile52) (pos47 ?tile49) (pos48 ?tile46) (pos49 ?tile53)
                     (pos51 ?tile47) (pos52 ?tile54) (pos53 ?tile51) (pos54 ?tile48)
@@ -231,15 +212,13 @@
                     ?tile37 - piece ?tile38 - piece ?tile39 - piece ?tile40 - piece ?tile42 - piece ?tile43 - piece ?tile44 - piece ?tile45 - piece
                     ?tile10 - piece ?tile11 - piece ?tile12 - piece
                     ?tile19 - piece ?tile20 - piece ?tile21 - piece
-                    ?tile28 - piece ?tile29 - piece ?tile30 - piece
-                    ?movement - movetype)
+                    ?tile28 - piece ?tile29 - piece ?tile30 - piece)
              :precondition (and (pos1 ?tile1) (pos2 ?tile2) (pos3 ?tile3)
                     (pos37 ?tile37) (pos38 ?tile38) (pos39 ?tile39) (pos40 ?tile40)
                     (pos42 ?tile42) (pos43 ?tile43) (pos44 ?tile44) (pos45 ?tile45)
                     (pos10 ?tile10) (pos11 ?tile11) (pos12 ?tile12)
                     (pos19 ?tile19) (pos20 ?tile20) (pos21 ?tile21)
-                    (pos28 ?tile28) (pos29 ?tile29) (pos30 ?tile30)
-                    (twist ?movement) (is-back ?movement))
+                    (pos28 ?tile28) (pos29 ?tile29) (pos30 ?tile30))
              :effect (and (pos1 ?tile10) (pos2 ?tile11) (pos3 ?tile12)
                     (pos37 ?tile43) (pos38 ?tile40) (pos39 ?tile37) (pos40 ?tile44)
                     (pos42 ?tile38) (pos43 ?tile45) (pos44 ?tile42) (pos45 ?tile39)

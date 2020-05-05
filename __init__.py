@@ -45,7 +45,9 @@ for env_name, kwargs in [
         ("blocks_operator_actions", {'render' : blocks_render,
                                      'operators_as_actions' : True,
                                      'dynamic_action_space' : True}),
-        ("eli-rubiks-attempt", {'render' : rubiks_render}),
+        ("rubiks", {'render' : rubiks_render,
+                                'operators_as_actions' : False,
+                                'dynamic_action_space' : False}),
 ]:
     other_args = {
         "raise_error_on_invalid_action": False,

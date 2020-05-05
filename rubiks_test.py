@@ -54,7 +54,7 @@ def run_norender_timing(env):
         #print("Obs:", obs)
 
         action = env.action_space.sample()
-        #print("Action:", action)
+        print("Action:", action)
 
         obs, reward, done, _ = env.step(action)
         #print("Rew:", reward)
@@ -70,7 +70,7 @@ def run_norender_timing(env):
 
 if __name__ == '__main__':
     # Config gym
-    env = gym.make("PDDLEnvEli-rubiks-attempt-v0")
+    env = gym.make("PDDLEnvRubiks-v0")
     env.fix_problem_index(0) # Problem index is just a way to specify a specific pddl problem file
 
     #run_norender_timing(env)
